@@ -1,16 +1,16 @@
 # create-expert-skill
 
-> Transform expert conversations into production-ready Claude Skills. Captures domain knowledge through structured roleplay, packages deterministic scripts alongside flexible guidance, and loads expertise progressively—so AI assistants work like specialists, not generalists guessing.
+> Transform expert conversations into production-grade Claude Skills. Whith this enhanced "skill-creator" skill you can capture domain knowledge and system-specific ontologies through structured roleplay. It also packages deterministic scripts alongside flexible guidance, and loads expertise progressively, turning AI assistants into specialists.
 
 ## Why This Exists
 
-AI assistants fail in production for two reasons:
+AI assistants struggle in production for two reasons:
 
-1. **Missing domain expertise** — Generic models don't know your industry's edge cases, terminology, or unwritten rules
+1. **Missing domain expertise** — Generic models don't know or aren't primed with your industry's edge cases, terminology, or unwritten rules.
 2. **Missing ontology understanding** — They don't grasp your specific data structures, entity relationships, or system constraints
 
 This skill solves both by helping you:
-- **Interview experts** (or yourself) to extract tacit domain knowledge
+- **Interview experts** (or yourself) to extract implicit domain knowledge
 - **Map system ontologies** — company-specific structures, codes, and relationships
 - **Separate deterministic work** (validation, parsing, math) from flexible interpretation
 - **Load knowledge progressively** — only what's needed, when it's needed
@@ -144,16 +144,7 @@ my-skill/
 
 ## Packaging
 
-When your skill is ready:
-
-```bash
-python scripts/package_skill.py ./my-skill 1.0
-```
-
-Creates `my-skill-v1.0.zip` with:
-- Auto-generated `DIRECTORY_STRUCTURE.txt`
-- Auto-generated `README.md` (if missing)
-- Proper folder structure ready for upload
+**This skill includes an automated zipping procedure** In most cases, it runs on its own once the expert skill is finished, returning the plug-and-play .zip of the skill directly in conversation. If this doesn't run automatically, simply ask Claude to deliver the packaged skill.
 
 ## Files
 
@@ -190,4 +181,4 @@ MIT — use freely, modify as needed.
 ---
 
 **Version:** 2.2
-**Tested with:** Claude Desktop, Claude Code, Claude Agent SDK
+**Tested with:** Claude Desktop
