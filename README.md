@@ -4,6 +4,10 @@
 
 ## Why This Exists
 
+Anthropic released a basic "skill-creator", however, it doesn't utilize the entire range of what's possible within a Skill. This enhanced skill creator makes use of resources, scripts, progressive disclosure and system architecture knowledge to deliver elaborate skills, zipped and ready to upload.
+
+## Why the "Expert" Part Matters
+
 AI assistants struggle in production for two reasons:
 
 1. **Missing domain expertise** — Generic models don't know or aren't primed with your industry's edge cases, terminology, or unwritten rules.
